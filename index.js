@@ -8,4 +8,4 @@ app.get('/feed', (req, res) => {
   feed('wripolinema').then(data => res.json(data))
 })
 
-app.listen(3001, () => console.log('server started'))
+app.listen(process.env.PORT || 3001, () => console.log('server started'))
